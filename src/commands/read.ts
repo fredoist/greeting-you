@@ -1,9 +1,8 @@
-import { OptionValues } from 'commander';
 import chalk from 'chalk';
 import { supabase } from '../supabase';
 import { withAuth } from '../helpers';
 
-export const read = withAuth(async ({ id }: OptionValues & { id: string }) => {
+export const read = withAuth(async ({ id }) => {
   if (id) {
     const { data, error } = await supabase
       .from('greetings')
