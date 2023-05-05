@@ -23,7 +23,7 @@
     "commander": "^10.0.1",
     "dotenv": "^16.0.3",
     "inquirer": "^8.2.5",
-    "supabase-auth-helpers-cli": "^0.1.0"
+    "supabase-auth-helpers-cli": "^0.1.2"
   },
   "devDependencies": {
     "@types/inquirer": "^9.0.3",
