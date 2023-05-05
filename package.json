@@ -4,7 +4,7 @@
   "description": "A CLI tool to greet your friends",
   "main": "./bin/index.js",
   "bin": {
-    "supa": "./bin/index.js"
+    "greet": "./bin/index.js"
   },
   "preferGlobal": true,
   "scripts": {
