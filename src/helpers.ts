@@ -1,17 +1,23 @@
+import { OptionValues } from 'commander';
+import { Session } from '@supabase/supabase-js';
 import { supabase } from './supabase';
 import chalk from 'chalk';
 
-export const withAuth = (fn: any) => {
-  return async (...args: any) => {
+export const withAuth =
+  (fn: (options: OptionValues, session: Session) => Promise<void>) =>
+  async (options: OptionValues) => {
     const {
       data: { session },
     } = await supabase.auth.getSession();
 
     if (!session) {
-      console.log(chalk.red('You must be logged in to run this command'));
+      console.log(
+        chalk.redBright(
+          'You must be logged in to perform this action. Please run `greet login`.'
+        )
+      );
       return;
     }
-
-    return fn.apply(fn, args);
+    
+    return fn(options, session);
   };
-};
