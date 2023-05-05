@@ -17,12 +17,7 @@ greet login
 
 ## Local setup
 
-1. Create a supabase project and replace your **Project URL** and **API Key** on `.env`
-
-    ```sh
-    cp .env.sample .env
-    ```
-
+1. Create a supabase project and replace your **Project URL** and **API Key** on `src/supabase.json`
 2. Run the following SQL query to create your table greetings
 
     ```sql
