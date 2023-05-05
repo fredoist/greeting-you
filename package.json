@@ -10,12 +10,18 @@
   "scripts": {
     "build": "tsc"
   },
-  "keywords": ["greeting", "social", "friends", "greeting-you"],
+  "keywords": [
+    "greeting",
+    "social",
+    "friends",
+    "greeting-you"
+  ],
   "author": "Freddy González <@fredoist>",
   "license": "MIT",
   "dependencies": {
     "chalk": "^5.2.0",
     "commander": "^10.0.1",
+    "dotenv": "^16.0.3",
     "inquirer": "^9.2.1",
     "supabase-auth-helpers-cli": "^0.1.0"
   },
