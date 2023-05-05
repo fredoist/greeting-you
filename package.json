@@ -1,0 +1,26 @@
+{
+  "name": "greeting-you",
+  "version": "1.0.0",
+  "description": "A CLI tool to greet your friends",
+  "main": "./bin/index.js",
+  "bin": {
+    "supa": "./bin/index.js"
+  },
+  "preferGlobal": true,
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": ["greeting", "social", "friends", "greeting-you"],
+  "author": "Freddy González <@fredoist>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "commander": "^10.0.1",
+    "inquirer": "^9.2.1",
+    "supabase-auth-helpers-cli": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.3",
+    "typescript": "^5.0.4"
+  }
+}
